@@ -1,10 +1,10 @@
 package ru.training.multithreading;
 
 public class Suspend {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         MyThread5 ob1 = new MyThread5("MyThread");
 
-        try{
+        try {
             Thread.sleep(1000);
 
             ob1.mysuspend();
@@ -26,7 +26,7 @@ public class Suspend {
             ob1.mysuspend();
             System.out.println("Остановка потока");
             ob1.mystop();
-        } catch (InterruptedException exc){
+        } catch (InterruptedException exc) {
             System.out.println("Прерывание основного потока");
         }
         System.out.println("Выход из основного потока");
