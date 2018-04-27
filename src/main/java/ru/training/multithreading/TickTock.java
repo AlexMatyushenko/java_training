@@ -14,6 +14,7 @@ public class TickTock {
         state = "ticked"; // установить текущее состояние после такта "тик"
         notify(); //позволить выполняться методу tock()
         try {
+            Thread.sleep(500);
             while (!state.equals("tocked"))
                 wait();//ожидание до завершения метода tock()
         } catch (InterruptedException exc) {
@@ -31,6 +32,7 @@ public class TickTock {
         state = "tocked"; // установить текущее состояние после такта "тик"
         notify();//позволить выполняться методу tick()
         try {
+            Thread.sleep(500);
             while (!state.equals("ticked"))
                 wait();//ожидание до завершения метода tock()
         } catch (InterruptedException exc) {
