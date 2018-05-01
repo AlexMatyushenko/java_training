@@ -18,8 +18,9 @@ public class UseMain {
         //Установить имя и приоритет основного потока
         System.out.println("Установка имени и приоритета\n");
         thrd.setName("Thread #1");
-        thrd.setPriority(Thread.NORM_PRIORITY+3);
+        thrd.setPriority(Thread.NORM_PRIORITY + 3);
         System.out.println("Новое имя основного потока: " + thrd.getName());
         System.out.println("Новое значение приоритета: " + thrd.getPriority());
     }
 }
+
